@@ -26,6 +26,6 @@ phases:
       - trivy image --exit-code 1 --severity HIGH,CRITICAL --ignore-unfixed public.ecr.aws/o0z2l8w8/bohulevych-flask-app:$IMAGE_TAG
       - echo Pushing the Docker image...
       - docker push public.ecr.aws/o0z2l8w8/bohulevych-flask-app:$IMAGE_TAG
-      - printf '[{"name":"sharma-assignment3-container","imageUri":"%s"}]' public.ecr.aws/o0z2l8w8/bohulevych-flask-app:$IMAGE_TAG > imagedefinitions.json
+      - printf '[{"name":"bohulevych-asn3-ecs","imageUri":"%s"}]' public.ecr.aws/o0z2l8w8/bohulevych-flask-app:$IMAGE_TAG > imagedefinitions.json
 artifacts:
     files: imagedefinitions.json
