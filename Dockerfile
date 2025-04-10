@@ -1,4 +1,4 @@
-FROM python:3.14-rc-slim
+FROM public.ecr.aws/o0z2l8w8/python:latest
 
 WORKDIR /app
 
